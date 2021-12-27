@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@mixins/*": ["src/views/components/mixins/*"]
+    },
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es5",
+    "removeComments": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "noImplicitThis": false,
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "lib": [
+      "es2015",
+      "es5",
+      "dom",
+      "dom.iterable", 
+      "es2015.promise",
+      "esnext",
+      "esnext.bigint"
+    ],
+    "types": [      
+      "@types/node",
+      "@types/jest"
+    ]
+  },
+  "include": [
+    "./src/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.vue",
+    "./src/**/*.css",
+    "./static/**/*.js",
+    "@types/**/*.d.ts"
+  ]
+}
+
